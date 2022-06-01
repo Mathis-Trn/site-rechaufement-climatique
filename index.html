@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <title></title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- FONT AWESOME -->
+        <script src="https://kit.fontawesome.com/0c87a70838.js"></script>
+
+        <!-- FONT CSS -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+        
+        <!-- CUSTOM CSS -->
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+
+        <div class="onglet-slide">
+            <a href="#acceuil" class="acctive"></a>
+            <a href="#mission"></a>
+            <a href="#propos"></a>
+            <a href="#don"></a>
+        </div>
+
+
+
+        <header>
+            <div class="container">
+                <div class="logo">
+                    <img src="img/logo.png" alt="" />
+                </div>
+                <div class="onglet">
+                    <ul>
+                        <li><a href="#acceuil">Acceuil</a></li>
+                        <li><a href="#mission">Notre Mission</a></li>
+                        <li><a href="#propos">À propos</a></li>
+                        <li><a href="#don">Faire un don</a></li>
+                    </ul>
+
+                </div>
+                <div class="logo"></div>
+            </div>
+        </header>
+
+        <section class="sec1" id="acceuil">
+            <div class="container">
+                <h1>Réchauffement<br />Climatique</h1>
+                <a href="#">
+                    <button>
+                        En savoir plus
+                         <i class="fas fa-long-arrow-alt-right" aria-hidden="true"></i>
+                    </button>
+                </a> 
+                <div class="bg-responsive">
+                    <img src="img/11.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <div class="transition">
+            <img src="img/10.png" alt="">
+        </div>
+
+        <section class="sec2" id="mission">
+                <div class="container">
+                    <div class="title">
+                        <h1>Notre mission...</h1>
+                    </div>
+                  <div class="content content-top">
+                        <div class="left" >
+                            <div class="titre">
+                                <div class="point"></div>
+                                <h2>"NOUS" SOMMES LA SOLUTION</h2>
+                            </div>
+                            <div class="separateur"></div>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Nullam risus metus, dapibus at faucibus sit amet, iaculis in erat.
+                                Suspendisse pharetra tortor vitae sapien scelerisque, vel pharetra ipsum molestie.
+                                Vivamus eu erat nisl. Duis condimentum a nibh posuere tempor.
+                            </p>
+                        </div>
+                        <div class="right">
+                            <img src="img/4.png" alt="" />
+                        </div>
+                    </div>
+                    <div class="content content-bottom">
+                        <div class="left">
+                            <img src="img/6.png" alt="" />
+                        </div>
+                        <div class="right" style="max-width: 700px;">
+                            <div class="titre">
+                                <div class="point"></div>
+                                <h2>PRESERVER LES FONDS</h2>
+                            </div>
+                            <div class="separateur"></div>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Nullam risus metus, dapibus at faucibus sit amet, iaculis in erat.
+                                Suspendisse pharetra tortor vitae sapien scelerisque, vel pharetra ipsum molestie.
+                                Vivamus eu erat nisl. Duis condimentum a nibh posuere tempor.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <section class="sec3" id="propos">
+            <div class="container">
+                <div class="left">
+                    <h1>Des espèces en <br/> 
+                        voie de disparition
+                    </h1>
+                    <div class="separateur"></div>
+                    <p>      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Nullam risus metus, dapibus at faucibus sit amet, iaculis in erat.
+                        Suspendisse pharetra tortor vitae sapien scelerisque, vel pharetra ipsum molestie.
+                        Vivamus eu erat nisl. Duis condimentum a nibh posuere tempor.
+                    </p>
+                    <a href="#">
+                        <button>
+                            En savoir plus
+                                <i class="fas fa-long-arrow-alt-right" aria-hidden="true"></i>
+                        </button>
+                    </a> 
+                </div>
+                <div class="right">
+                    <img src="img/2.png" alt="" />
+                </div>
+            </div>
+        </section>
+
+        <section class="sec4" id="don">
+            <div class="content">
+                <div class="left">
+                    <img src="img/5.png" alt="">
+                </div>
+                <div class="mid">
+                    <h1>Pour chaques don</h1>
+                    <h2>1M² de banquise sauvée </h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Nullam risus metus, dapibus at faucibus sit amet, iaculis in erat.
+                        Suspendisse pharetra tortor vitae sapien scelerisque, vel pharetra ipsum molestie.
+                        Vivamus eu erat nisl. Duis condimentum a nibh posuere tempor.
+                    </p>
+                    <a href="#">
+                        <button>
+                            Faire un don
+                                <i class="fab fa-paypal" aria-hidden="true"></i>
+                        </button>
+                    </a> 
+                </div>
+                <div class="right">
+                    <img src="img/8.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+
+        <script type="text/javascript">
+            $(document).on("click", ".onglet-slide a", function () {
+                $(this).addClass("active").siblings().removeClass("active");
+            });
+        </script>
+    </body>
+</html>
